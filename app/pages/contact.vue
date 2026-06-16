@@ -5,7 +5,14 @@
 </template>
 
 <script setup lang="ts">
+    useHead({
+        title: "Portfolio - Contact",
+        meta: [
+            {
 
+            }
+        ]
+    });
 </script>
 
 <style scoped>

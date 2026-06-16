@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 useHead({
-    title: "Works",
+    title: "Portfolio - Works",
     meta: [
         {
             name: "Works page",

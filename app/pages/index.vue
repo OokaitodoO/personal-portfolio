@@ -225,7 +225,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 useHead({
-    title: "Home",
+    title: "Portfolio - Home",
     meta: [
         {
             name: "Home page",
