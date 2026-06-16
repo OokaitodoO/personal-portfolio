@@ -1,17 +1,26 @@
 <template>
     <section class="flex flex-col">
-        <div class="flex flex-col justify-start w-1/2 py-10">
-            <p class=" font-light">Junior Game / Web Developer</p>
-            <h1 class=" text-3xl font-medium typewriter py-3">Play games constructively; extract benefits from games.
-            </h1>
-            <p class=" text-balance">I developing game indie with solo dev. And interesting about web development, so I
-                try my best for learn and develop myself every day. Now I'm learning Nuxt.</p>
-            <div class=" flex items-center gap-10 py-3">
-                <button class=" font-bold py-2 px-4 rounded-2xl bg-white border cursor-pointer hover:bg-amber-100">View
-                    my work</button>
-                <button
-                    class=" font-bold py-2 px-4 rounded-2xl bg-white border cursor-pointer hover:bg-amber-100">Download
-                    resume</button>
+        <div class="flex relative">
+            <div class="flex flex-col justify-start w-full md:w-1/2 py-10 z-10">
+                <p class=" font-light">Junior Game / Web Developer</p>
+                <h1 class=" text-3xl font-medium typewriter py-3">Play games constructively; extract benefits from
+                    games.
+                </h1>
+                <p class=" text-balance">I developing game indie with solo dev. And interesting about web development,
+                    so I
+                    try my best for learn and develop myself every day. Now I'm learning Nuxt.</p>
+                <div class=" flex items-center gap-10 py-3 flex-wrap">
+                    <nuxt-link to="/works"
+                        class=" font-bold py-2 px-4 rounded-2xl bg-white border cursor-pointer hover:bg-amber-100">View
+                        mywork</nuxt-link>
+                    <a href="/documents/ResumeENG.pdf" target="blank"
+                        class=" font-bold py-2 px-4 rounded-2xl bg-white border cursor-pointer hover:bg-amber-100"
+                        external>Download resume</a>
+                </div>
+            </div>
+            <div class="absolute inset-0">
+                <img src="/images/heroBG.png" alt="hero background" class="w-full h-full object-cover object-center md:object-right" />
+                <div class="absolute inset-0 bg-linear-to-r from-gray-100 via-gray-100/80 to-transparent"></div>
             </div>
         </div>
 
@@ -23,7 +32,7 @@
             </div>
 
             <!-- Carousel Container - Shows 3 projects at once -->
-            <div class="relative w-full max-w-7xl mx-auto px-10">
+            <div class="relative w-full max-w-8xl mx-auto px-10">
                 <div class="overflow-hidden">
                     <div ref="carouselTrack" class="flex transition-transform duration-500 ease-in-out">
                         <!-- Project Group 1 -->
@@ -187,8 +196,11 @@
                 </div>
 
                 <div class="flex flex-col pl-6">
-                    <p>I'm a Junior Game/Web Developer passionate about creating engaging experiences. I focus on building constructive games and modern web applications, constantly learning and improving my craft.</p>
-                    <p class=" pt-6">Currently learning Nuxt.js and exploring indie game development as a solo developer.</p>
+                    <p>I'm a Junior Game/Web Developer passionate about creating engaging experiences. I focus on
+                        building constructive games and modern web applications, constantly learning and improving my
+                        craft.</p>
+                    <p class=" pt-6">Currently learning Nuxt.js and exploring indie game development as a solo
+                        developer.</p>
                     <div class="flex py-6 justify-between items-center">
                         <div class="flex flex-col">
                             <h2 class=" text-6xl font-semibold">1+</h2>
@@ -211,6 +223,16 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+useHead({
+    title: "Home",
+    meta: [
+        {
+            name: "Home page",
+            content: "Overall my portfolio"
+        }
+    ]
+});
 
 const currentSlide = ref(0)
 const carouselTrack = ref(null)

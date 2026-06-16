@@ -5,9 +5,15 @@
 </template>
 
 <script setup lang="ts">
-
+useHead({
+    title: "Works",
+    meta: [
+        {
+            name: "Works page",
+            content: "Show all my project"
+        }
+    ]
+});
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
