@@ -41,15 +41,10 @@
                                 <!-- Project 1 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
-                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Game Project Alpha</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">An indie puzzle game
-                                        focused on constructive gameplay mechanics.</p>
-                                    <div class="flex flex-wrap gap-1.5 mb-3">
-                                        <span class="px-2 py-0.5 bg-blue-50 text-blue-400 rounded text-xs">Unity</span>
-                                        <span class="px-2 py-0.5 bg-purple-50 text-purple-400 rounded text-xs">C#</span>
-                                    </div>
-                                    <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
-                                        Project →</a>
+                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Don't Press S</h3>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">Live action interactive game. Made on Global Game Jam 2024 at CAMT, Chiang Mai University. Has 48 hours limited time. 1st runner-up rewarded.</p>
+                                    <TechStack :technologies="['Unity', 'C#', 'Windows']" wrapper-class="mb-3" />
+                                    <nuxt-link to="/works/dont-press-s" class="text-gray-600 text-sm hover:text-gray-800 transition-colors" >View Project →</nuxt-link>                                
                                 </div>
 
                                 <!-- Project 2 -->
@@ -58,10 +53,7 @@
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">Web Portfolio</h3>
                                     <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">My personal
                                         portfolio built with Nuxt 3 and Tailwind CSS showcasing my work.</p>
-                                    <div class="flex flex-wrap gap-1.5 mb-3">
-                                        <span class="px-2 py-0.5 bg-sky-50 text-sky-400 rounded text-xs">Nuxt 3</span>
-                                        <span class="px-2 py-0.5 bg-cyan-50 text-cyan-400 rounded text-xs">Vue.js</span>
-                                    </div>
+                                    <TechStack :technologies="['Nuxt 3', 'Vue.js']" wrapper-class="mb-3" />
                                     <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
                                         Project →</a>
                                 </div>
@@ -72,11 +64,7 @@
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">Mobile Game</h3>
                                     <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">A mobile-friendly
                                         arcade game with smooth controls and engaging gameplay.</p>
-                                    <div class="flex flex-wrap gap-1.5 mb-3">
-                                        <span
-                                            class="px-2 py-0.5 bg-indigo-50 text-indigo-400 rounded text-xs">Flutter</span>
-                                        <span class="px-2 py-0.5 bg-pink-50 text-pink-400 rounded text-xs">Dart</span>
-                                    </div>
+                                    <TechStack :technologies="['Flutter', 'Dart']" wrapper-class="mb-3" />
                                     <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
                                         Project →</a>
                                 </div>
@@ -92,12 +80,7 @@
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">Pixel Adventure</h3>
                                     <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">A retro-style pixel
                                         art platformer with modern game mechanics.</p>
-                                    <div class="flex flex-wrap gap-1.5 mb-3">
-                                        <span
-                                            class="px-2 py-0.5 bg-violet-50 text-violet-400 rounded text-xs">Godot</span>
-                                        <span
-                                            class="px-2 py-0.5 bg-rose-50 text-rose-400 rounded text-xs">GDScript</span>
-                                    </div>
+                                    <TechStack :technologies="['Godot', 'GDScript']" wrapper-class="mb-3" />
                                     <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
                                         Project →</a>
                                 </div>
@@ -108,12 +91,7 @@
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">UI Component Library</h3>
                                     <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">Reusable Vue
                                         components with TypeScript for rapid development.</p>
-                                    <div class="flex flex-wrap gap-1.5 mb-3">
-                                        <span
-                                            class="px-2 py-0.5 bg-amber-50 text-amber-400 rounded text-xs">TypeScript</span>
-                                        <span
-                                            class="px-2 py-0.5 bg-lime-50 text-lime-400 rounded text-xs">Storybook</span>
-                                    </div>
+                                    <TechStack :technologies="['TypeScript', 'Storybook']" wrapper-class="mb-3" />
                                     <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
                                         Project →</a>
                                 </div>
@@ -124,12 +102,7 @@
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">Dev Blog</h3>
                                     <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">Technical blog
                                         sharing game development insights and tutorials.</p>
-                                    <div class="flex flex-wrap gap-1.5 mb-3">
-                                        <span
-                                            class="px-2 py-0.5 bg-rose-50 text-rose-400 rounded text-xs">Markdown</span>
-                                        <span
-                                            class="px-2 py-0.5 bg-fuchsia-50 text-fuchsia-400 rounded text-xs">VitePress</span>
-                                    </div>
+                                    <TechStack :technologies="['Markdown', 'VitePress']" wrapper-class="mb-3" />
                                     <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
                                         Project →</a>
                                 </div>
@@ -140,13 +113,17 @@
 
                 <!-- Navigation Arrows -->
                 <button @click="prevSlide"
-                    class="absolute left-0 top-1/2 -translate-y-8 bg-white/90 hover:bg-gray-200 rounded-full p-2 shadow-lg transition-all cursor-pointer z-10">
+                    class="absolute left-0 top-1/2 -translate-y-8 bg-white/90 hover:bg-gray-200 rounded-full p-2 shadow-lg transition-all cursor-pointer z-10"
+                    name="navigation-arrow"
+                    v-if="totalSlides > 1">
                     <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
                 <button @click="nextSlide"
-                    class="absolute right-0 top-1/2 -translate-y-8 bg-white/90 hover:bg-gray-200 rounded-full p-2 shadow-lg transition-all cursor-pointer z-10">
+                    class="absolute right-0 top-1/2 -translate-y-8 bg-white/90 hover:bg-gray-200 rounded-full p-2 shadow-lg transition-all cursor-pointer z-10"
+                    name="navigation-arrow"
+                    v-if="totalSlides > 1">
                     <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                     </svg>
@@ -154,7 +131,7 @@
 
                 <!-- Dots Navigation -->
                 <div class="flex justify-center mt-6 gap-2">
-                    <button v-for="i in 2" :key="i" @click="goToSlide(i - 1)" :class="[
+                    <button v-for="i in totalSlides" :key="i" @click="goToSlide(i - 1)" :class="[
                         'w-2 h-2 rounded-full transition-all cursor-pointer',
                         currentSlide === i - 1 ? 'bg-gray-600 w-4' : 'bg-gray-300 hover:bg-gray-400'
                     ]"></button>
@@ -207,7 +184,7 @@
                             <p class=" font-light">Years experience</p>
                         </div>
                         <div class="flex flex-col">
-                            <h2 class=" text-6xl font-semibold">3</h2>
+                            <h2 class=" text-6xl font-semibold">6</h2>
                             <p class=" font-light">Game projects</p>
                         </div>
                         <div class="flex flex-col">
@@ -223,6 +200,7 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import TechStack from '@/components/TechStack.vue'
 
 useHead({
     title: "Portfolio - Home",
