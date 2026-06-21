@@ -15,6 +15,7 @@
                             <h2 class="text-xl font-semibold text-gray-700">Bachelor of Science (Digital games)</h2>
                             <p class="text-gray-600 font-light">Chiang Mai University, Thailand</p>
                             <p class="text-gray-500">2022 - 2026</p>
+                            <p class="text-gray-500">GPX : 3.49</p>
                         </div>
                     </div>
                 </div>

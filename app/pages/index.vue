@@ -19,7 +19,8 @@
                 </div>
             </div>
             <div class="absolute inset-0">
-                <img src="/images/heroBG.png" alt="hero background" class="w-full h-full object-cover object-center md:object-right" />
+                <img src="/images/heroBG.png" alt="hero background"
+                    class="w-full h-full object-cover object-center md:object-right" />
                 <div class="absolute inset-0 bg-linear-to-r from-gray-100 via-gray-100/80 to-transparent"></div>
             </div>
         </div>
@@ -42,27 +43,37 @@
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">Don't Press S</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">Live action interactive game. Made on Global Game Jam 2024 at CAMT, Chiang Mai University. Has 48 hours limited time. 1st runner-up rewarded.</p>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">Live action interactive
+                                        game. Made on Global Game Jam 2024 at CAMT, Chiang Mai University. Has 48 hours
+                                        limited time. 1st runner-up rewarded.</p>
                                     <TechStack :technologies="['Unity', 'C#', 'Windows']" wrapper-class="mb-3" />
-                                    <nuxt-link to="/works/dont-press-s" class="text-gray-600 text-sm hover:text-gray-800 transition-colors" >View Project →</nuxt-link>                                
+                                    <nuxt-link to="/works/dont-press-s"
+                                        class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project
+                                        →</nuxt-link>
                                 </div>
 
                                 <!-- Project 2 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">Web Portfolio</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">My personal
-                                        portfolio built with Nuxt framework and Tailwind CSS showcasing my work.</p>
-                                    <TechStack :technologies="['Nuxt', 'Vue.js', 'Tailwind', 'HTML']" wrapper-class="mb-3" />                                    
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">Personal website
+                                        portfolio for show my works with game and web development experience.</p>
+                                    <TechStack :technologies="['Nuxt', 'Vue.js', 'Tailwind', 'HTML']"
+                                        wrapper-class="mb-3" />
                                 </div>
 
                                 <!-- Project 3 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">Unusual Poker</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">A online poker android game with magic skill for cheating. Made with Unity and MagicOnion RPC C# framework.</p>
-                                    <TechStack :technologies="['Unity', 'C#', 'MagicOnion', 'Android']" wrapper-class="mb-3" />
-                                    <nuxt-link to="/works/poker" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project →</nuxt-link>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">A online poker taxas holdem android
+                                        game with magic skill for cheating. Made with Unity and MagicOnion RPC C#
+                                        framework.</p>
+                                    <TechStack :technologies="['Unity', 'C#', 'MagicOnion', 'Android']"
+                                        wrapper-class="mb-3" />
+                                    <nuxt-link to="/works/poker"
+                                        class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project
+                                        →</nuxt-link>
                                 </div>
                             </div>
                         </div>
@@ -73,34 +84,41 @@
                                 <!-- Project 4 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
-                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Pixel Adventure</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">A retro-style pixel
-                                        art platformer with modern game mechanics.</p>
-                                    <TechStack :technologies="['Godot', 'GDScript']" wrapper-class="mb-3" />
-                                    <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
-                                        Project →</a>
+                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Redveil</h3>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">A 3D mysterious adventure
+                                        game with a distinctive red aesthetic and weapon mechanic.</p>
+                                    <TechStack :technologies="['Unity', 'C#', 'Windows']" wrapper-class="mb-3" />
+                                    <nuxt-link to="/works/redveil"
+                                        class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project
+                                        →</nuxt-link>
                                 </div>
 
                                 <!-- Project 5 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
-                                    <h3 class="text-lg font-medium text-gray-800 mb-2">UI Component Library</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">Reusable Vue
-                                        components with TypeScript for rapid development.</p>
-                                    <TechStack :technologies="['TypeScript', 'Storybook']" wrapper-class="mb-3" />
-                                    <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
-                                        Project →</a>
+                                    <h3 class="text-lg font-medium text-gray-800 mb-2">CAMT Portal</h3>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">Web portal for CAMT,
+                                        Chiang Mai University. Manage staff task with web portal style. Fast
+                                        accessibility, easy use.</p>
+                                    <TechStack :technologies="['Laravel', 'MySQL', 'Vite', 'Docker', 'PHP']"
+                                        wrapper-class="mb-3" />
+                                    <nuxt-link to="/works/camt-portal"
+                                        class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project
+                                        →</nuxt-link>
                                 </div>
 
                                 <!-- Project 6 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
-                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Dev Blog</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">Technical blog
-                                        sharing game development insights and tutorials.</p>
-                                    <TechStack :technologies="['Markdown', 'VitePress']" wrapper-class="mb-3" />
-                                    <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
-                                        Project →</a>
+                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Blackest Night</h3>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">A dark-themed indie game
+                                        project, endless game loop. You need to survive as long as you can in a mystery
+                                        forest.
+                                    </p>
+                                    <TechStack :technologies="['Unity', 'C#', 'Android']" wrapper-class="mb-3" />
+                                    <nuxt-link to="/works/blackest-night"
+                                        class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project
+                                        →</nuxt-link>
                                 </div>
                             </div>
                         </div>
@@ -110,16 +128,14 @@
                 <!-- Navigation Arrows -->
                 <button @click="prevSlide"
                     class="absolute left-0 top-1/2 -translate-y-8 bg-white/90 hover:bg-gray-200 rounded-full p-2 shadow-lg transition-all cursor-pointer z-10"
-                    name="navigation-arrow"
-                    v-if="totalSlides > 1">
+                    name="navigation-arrow" v-if="totalSlides > 1">
                     <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
                 <button @click="nextSlide"
                     class="absolute right-0 top-1/2 -translate-y-8 bg-white/90 hover:bg-gray-200 rounded-full p-2 shadow-lg transition-all cursor-pointer z-10"
-                    name="navigation-arrow"
-                    v-if="totalSlides > 1">
+                    name="navigation-arrow" v-if="totalSlides > 1">
                     <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                     </svg>
