@@ -6,12 +6,16 @@
         </div>
 
         <div class="flex flex-col gap-8 pb-10">
-            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+            <!-- Game Preview Image -->
+            <div class="flex flex-col md:flex-row bg-white border border-gray-200 rounded-2xl overflow-hidden">
                 <img src="/images/LastDayInKhumuang/LDKMenu.png" alt="Last Day in Khumuang"
-                    class="w-full h-auto object-cover" />
+                    class="w-full md:w-1/3 lg:w-1/4 h-auto object-cover" />
+                <div class="p-6 flex flex-col justify-center">
+                    <p class="text-gray-700 leading-relaxed">An adventure game set in a fictional location, featuring narrative-driven gameplay and exploration. Players uncover the story through environmental storytelling and meaningful character interactions in this immersive experience.</p>
+                </div>
             </div>
 
-            <<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <img v-for="i in screenshots" :key="i" :src="`/images/LastDayInKhumuang/${i}`"
                     class="w-full h-32 sm:h-40 md:h-48 object-cover rounded-lg border border-gray-200 shadow-sm transition-transform duration-200 hover:scale-[1.02]" />
             </div>

@@ -6,8 +6,12 @@
         </div>
 
         <div class="flex flex-col gap-8 pb-10">
-            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-                <img src="/images/DontPressS/DontPressS.png" alt="Don't Press S" class="w-full h-auto object-cover" />
+            <!-- Game Preview Image -->
+            <div class="flex flex-col md:flex-row bg-white border border-gray-200 rounded-2xl overflow-hidden">
+                <img src="/images/DontPressS/DontPressS.png" alt="Don't Press S" class="w-full md:w-1/3 lg:w-1/4 h-auto object-cover" />
+                <div class="p-6 flex flex-col justify-center">
+                    <p class="text-gray-700 leading-relaxed">A unique arcade-style game with a twist - players must navigate challenges while avoiding a specific key press. The gameplay creates tension and requires quick reflexes as players master increasingly difficult obstacle courses.</p>
+                </div>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

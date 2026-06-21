@@ -6,9 +6,13 @@
         </div>
 
         <div class="flex flex-col gap-8 pb-10">
-            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+            <!-- Game Preview Image -->
+            <div class="flex flex-col md:flex-row bg-white border border-gray-200 rounded-2xl overflow-hidden">
                 <img src="/images/ShootZ/ShootZ.png" alt="ShootZ"
-                    class="w-full h-auto object-cover" />
+                    class="w-full md:w-1/3 lg:w-1/4 h-auto object-cover" />
+                <div class="p-6 flex flex-col justify-center">
+                    <p class="text-gray-700 leading-relaxed">A fast-paced shooting game with action-packed gameplay and dynamic combat mechanics. Players face intense battles with responsive controls and explosive visuals in this adrenaline-fueled experience.</p>
+                </div>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">

@@ -36,13 +36,13 @@
                 <div class="overflow-hidden">
                     <div ref="carouselTrack" class="flex transition-transform duration-500 ease-in-out">
                         <!-- Project Group 1 -->
-                        <div class="w-full flex-shrink-0">
+                        <div class="w-full shrink-0">
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 <!-- Project 1 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">Don't Press S</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">Live action interactive game. Made on Global Game Jam 2024 at CAMT, Chiang Mai University. Has 48 hours limited time. 1st runner-up rewarded.</p>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">Live action interactive game. Made on Global Game Jam 2024 at CAMT, Chiang Mai University. Has 48 hours limited time. 1st runner-up rewarded.</p>
                                     <TechStack :technologies="['Unity', 'C#', 'Windows']" wrapper-class="mb-3" />
                                     <nuxt-link to="/works/dont-press-s" class="text-gray-600 text-sm hover:text-gray-800 transition-colors" >View Project →</nuxt-link>                                
                                 </div>
@@ -51,34 +51,30 @@
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">Web Portfolio</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">My personal
-                                        portfolio built with Nuxt 3 and Tailwind CSS showcasing my work.</p>
-                                    <TechStack :technologies="['Nuxt 3', 'Vue.js']" wrapper-class="mb-3" />
-                                    <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
-                                        Project →</a>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">My personal
+                                        portfolio built with Nuxt framework and Tailwind CSS showcasing my work.</p>
+                                    <TechStack :technologies="['Nuxt', 'Vue.js', 'Tailwind', 'HTML']" wrapper-class="mb-3" />                                    
                                 </div>
 
                                 <!-- Project 3 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
-                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Mobile Game</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">A mobile-friendly
-                                        arcade game with smooth controls and engaging gameplay.</p>
-                                    <TechStack :technologies="['Flutter', 'Dart']" wrapper-class="mb-3" />
-                                    <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
-                                        Project →</a>
+                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Unusual Poker</h3>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">A online poker android game with magic skill for cheating. Made with Unity and MagicOnion RPC C# framework.</p>
+                                    <TechStack :technologies="['Unity', 'C#', 'MagicOnion', 'Android']" wrapper-class="mb-3" />
+                                    <nuxt-link to="/works/poker" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project →</nuxt-link>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Project Group 2 -->
-                        <div class="w-full flex-shrink-0">
+                        <div class="w-full shrink-0">
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 <!-- Project 4 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">Pixel Adventure</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">A retro-style pixel
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">A retro-style pixel
                                         art platformer with modern game mechanics.</p>
                                     <TechStack :technologies="['Godot', 'GDScript']" wrapper-class="mb-3" />
                                     <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
@@ -89,7 +85,7 @@
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">UI Component Library</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">Reusable Vue
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">Reusable Vue
                                         components with TypeScript for rapid development.</p>
                                     <TechStack :technologies="['TypeScript', 'Storybook']" wrapper-class="mb-3" />
                                     <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
@@ -100,7 +96,7 @@
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
                                     <h3 class="text-lg font-medium text-gray-800 mb-2">Dev Blog</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed flex-grow">Technical blog
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">Technical blog
                                         sharing game development insights and tutorials.</p>
                                     <TechStack :technologies="['Markdown', 'VitePress']" wrapper-class="mb-3" />
                                     <a href="#" class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View
@@ -141,59 +137,7 @@
 
         <div class="flex flex-col py-10">
             <h1 class="text-2xl font-bold text-gray-800">ABOUT</h1>
-            <div class="flex pt-6">
-                <div class="flex flex-col gap-3 border-e pr-6 w-5xl">
-                    <div class=" rounded-4xl bg-purple-100 p-4 size-fit">
-                        <h1 class=" text-2xl text-purple-500">KM</h1>
-                    </div>
-                    <div>
-                        <p>Kanjanawat Muangkam</p>
-                        <p class=" font-light">Based in Bangkok</p>
-                    </div>
-                    <div class="flex gap-3 flex-wrap">
-                        <div class=" bg-white size-fit py-2 px-4 rounded-2xl border">
-                            <span class="">Unity</span>
-                        </div>
-                        <div class=" bg-white size-fit py-2 px-4 rounded-2xl border">
-                            <span class="">C#</span>
-                        </div>
-                        <div class=" bg-white size-fit py-2 px-4 rounded-2xl border">
-                            <span class="">Vue.js</span>
-                        </div>
-                        <div class=" bg-white size-fit py-2 px-4 rounded-2xl border">
-                            <span class="">Nuxt</span>
-                        </div>
-                        <div class=" bg-white size-fit py-2 px-4 rounded-2xl border">
-                            <span class="">Tailwind</span>
-                        </div>
-                        <div class=" bg-white size-fit py-2 px-4 rounded-2xl border">
-                            <span class="">Git</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col pl-6">
-                    <p>I'm a Junior Game/Web Developer passionate about creating engaging experiences. I focus on
-                        building constructive games and modern web applications, constantly learning and improving my
-                        craft.</p>
-                    <p class=" pt-6">Currently learning Nuxt.js and exploring indie game development as a solo
-                        developer.</p>
-                    <div class="flex py-6 justify-between items-center">
-                        <div class="flex flex-col">
-                            <h2 class=" text-6xl font-semibold">1+</h2>
-                            <p class=" font-light">Years experience</p>
-                        </div>
-                        <div class="flex flex-col">
-                            <h2 class=" text-6xl font-semibold">6</h2>
-                            <p class=" font-light">Game projects</p>
-                        </div>
-                        <div class="flex flex-col">
-                            <h2 class=" text-6xl font-semibold">2</h2>
-                            <p class=" font-light">Web projects</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <AboutSection />
         </div>
     </section>
 </template>

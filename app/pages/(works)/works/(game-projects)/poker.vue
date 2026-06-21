@@ -6,9 +6,13 @@
         </div>
 
         <div class="flex flex-col gap-8 pb-10">
-            <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+            <!-- Game Preview Image -->
+            <div class="flex flex-col md:flex-row bg-white border border-gray-200 rounded-2xl overflow-hidden">
                 <img src="/images/Poker/Poker.png" alt="Poker"
-                    class="w-full h-auto object-cover" />
+                    class="w-full md:w-1/3 lg:w-1/4 h-auto object-cover" />
+                <div class="p-6 flex flex-col justify-center">
+                    <p class="text-gray-700 leading-relaxed">A digital poker card game implementation with classic gameplay mechanics and smooth UI. Features traditional poker rules, intuitive controls, and polished visual design for an authentic card gaming experience.</p>
+                </div>
             </div>
 
             <div class="flex gap-4">
