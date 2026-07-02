@@ -45,7 +45,14 @@
                         <h2 class="text-lg font-medium text-gray-700">TypeScript Certificated</h2>
                         <p class="text-gray-500 font-light">TS and Framework • June 10, 2026</p>
                     </a>
-                </div>
+                    
+                    <a :href="`/documents/certificates/laravel/certificate-en-38.pdf`" target="_blank" rel="noopener noreferrer"
+                        class="flex flex-col gap-2 bg-white border border-gray-200 p-4 rounded-2xl items-center justify-center hover:shadow-md transition-all cursor-pointer">
+                        <img src="\documents\certificates\laravel\laravel-preview.png" alt="Typescript certificates" class="hover:scale-105 transition-transform duration-300">                        
+                        <h2 class="text-lg font-medium text-gray-700">Lravel8+React Certificated</h2>
+                        <p class="text-gray-500 font-light">Laravel8 and React JS • July 2, 2026</p>
+                    </a>
+                </div>                
             </div>
         </div>
     </section>

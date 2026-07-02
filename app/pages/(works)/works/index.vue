@@ -10,7 +10,7 @@
         <div class="flex flex-col gap-6">
             <h1 class=" text-2xl text-center p-3 border-b border-gray-200 font-bold text-gray-800">Game development</h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-10">
-                <ProjectCard v-for="project in gameProjects" :key="project.title" :title="project.title"
+                <ProjectCard v-for="project in GameProjects" :key="project.title" :title="project.title"
                     :description="project.description" :image="project.image" :tech-stack="project.techStack"
                     :to="project.to" />
             </div>
@@ -19,7 +19,7 @@
         <div class="flex flex-col gap-6">
             <h1 class=" text-2xl text-center p-3 border-b border-gray-200 font-bold text-gray-800">Web development</h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-10">
-                <ProjectCard v-for="project in webProjects" :key="project.title" :title="project.title"
+                <ProjectCard v-for="project in WebProjects" :key="project.title" :title="project.title"
                     :description="project.description" :image="project.image" :tech-stack="project.techStack"
                     :to="project.to" />
             </div>
@@ -28,85 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import ProjectCard from '@/components/ProjectCard.vue'
-
-interface Game {
-    title: string
-    description: string
-    image: string
-    techStack: string[]
-    to?: string
-}
-
-interface Web {
-    title: string
-    description: string
-    image: string
-    techStack: string[]
-    to?: string
-}
-
-const gameProjects: Game[] = [
-    {
-        title: 'Blackest Night',
-        description: 'A dark-themed 2.5D indie game project, endless game loop. You need to survive as long as you can in a mystery forest.',
-        image: '/images/BlackestNight/BlackestNight.png',
-        techStack: ['Unity', 'C#', 'Android'],
-        to: '/works/blackest-night'
-    },
-    {
-        title: "Don't Press S",
-        description: 'Live action interactive game. Made on Global Game Jam 2024 at CAMT, Chiang Mai University. Has 48 hours limited time. 1st runner-up rewarded.',
-        image: '/images/DontPressS/DontPressS.png',
-        techStack: ['Unity', 'C#', 'Windows'],
-        to: '/works/dont-press-s'
-    },
-    {
-        title: 'Last Day in Khumuang',
-        description: 'An adventure game set in a fictional location, featuring narrative-driven gameplay and exploration.',
-        image: '/images/LastDayInKhumuang/LastDayInKhumueng.png',
-        techStack: ['MonoGame', 'C#', 'Windows'],
-        to: '/works/last-day-in-khumuang'
-    },
-    {
-        title: 'Unusual Poker',
-        description: 'A online poker taxas holdem android game with magic skill for cheating. Made with Unity and MagicOnion RPC C#',
-        image: '/images/Poker/Poker.png',
-        techStack: ['Unity', 'C#', 'Android', 'MagicOnion'],
-        to: '/works/poker'
-    },
-    {
-        title: 'Redveil',
-        description: 'A 3D mysterious adventure game with a distinctive red aesthetic and weapon mechanic',
-        image: '/images/Redveil/Redveil.png',
-        techStack: ['Unity', 'C#', 'Windows'],
-        to: '/works/redveil'
-    },
-    {
-        title: 'ShootZ',
-        description: 'A fast-paced shooting game with action-packed gameplay and dynamic combat mechanics.',
-        image: '/images/ShootZ/ShootZ.png',
-        techStack: ['Construct3', 'WebGL'],
-        to: '/works/shootz'
-    }
-]
-
-const webProjects: Web[] = [
-    {
-        title: 'Portfolio',
-        description: 'Personal website portfolio for show my works with game and web development experience.',
-        image: '/images/heroBG.png',
-        techStack: ['HTML', 'Tailwind', 'Nuxt', 'Vue.js'],        
-    },
-    {
-        title: 'CAMT Portal',
-        description: "Web portal for CAMT, Chiang Mai University. Manage staff task with web portal style. Fast accessibility, easy use.",
-        image: '/images/CamtLogo.png',
-        techStack: ['Laravel', 'MySQL', 'Vite', 'Docker', 'PHP'],
-        to: '/works/camt-portal'
-    }
-]
-
+import { GameProjects, WebProjects } from "~/data/projects"
 
 useHead({
     title: "Portfolio - Works",

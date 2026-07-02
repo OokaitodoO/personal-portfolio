@@ -8,7 +8,7 @@
                 </h1>
                 <p class=" text-balance">I developing game indie with solo dev. And interesting about web development,
                     so I
-                    try my best for learn and develop myself every day. Now I'm learning Nuxt.</p>
+                    try my best for learn and develop myself every day.</p>
                 <div class=" flex items-center gap-10 py-3 flex-wrap">
                     <nuxt-link to="/works"
                         class=" font-bold py-2 px-4 rounded-2xl bg-white border cursor-pointer hover:bg-amber-100">View
