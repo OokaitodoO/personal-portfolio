@@ -19,8 +19,8 @@
                 </div>
             </div>
             <div class="absolute inset-0">
-                <img src="/images/heroBG.png" alt="hero background"
-                    class="w-full h-full object-cover object-center md:object-right" />
+                <NuxtImg provider="cloudinary" src="heroBG_sovijt.png" alt="hero background"
+                    class="w-full h-full object-cover object-center md:object-right" preload/>
                 <div class="absolute inset-0 bg-linear-to-r from-gray-100 via-gray-100/80 to-transparent"></div>
             </div>
         </div>
