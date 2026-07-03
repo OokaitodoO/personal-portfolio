@@ -1,13 +1,14 @@
 <template>
     <nuxt-link :to="link" target="blank" :class="getBtnClasses(type)">
-        {{ type }}        
+        {{ text? text : type }}        
     </nuxt-link>
 </template>
 
 <script setup lang="ts">
 interface link {
     type: string,
-    link?: string
+    link?: string,
+    text?: string
 }
 
 defineProps<link>();

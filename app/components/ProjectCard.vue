@@ -1,8 +1,12 @@
 <template>
-    <div class="bg-white border border-gray-100 rounded-xl overflow-hidden hover:border-gray-200 transition-all hover:shadow-lg flex flex-col h-full">
+    <div
+        class="bg-white border border-gray-100 rounded-xl overflow-hidden hover:border-gray-200 transition-all hover:shadow-lg flex flex-col h-full">
         <div class="aspect-video overflow-hidden">
-            <img :src="image" :alt="title"
-                class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300" />
+            <!-- <img :src="image" :alt="title"
+                class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300" /> -->
+            <NuxtImg provider="cloudinary" :src="image" alt="Project Thumbnail" fit="cover" loading="lazy"
+                format="webp"
+                class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"/>
         </div>
         <div class="p-5 flex flex-col grow">
             <h3 class="text-lg font-medium text-gray-800 mb-2">{{ title }}</h3>

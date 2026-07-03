@@ -5,8 +5,8 @@
             <div class="flex justify-between items-center">
                 <h1 class="text-3xl font-bold text-gray-800">{{ current?.title }}</h1>
                 <div class="flex gap-4">
-                    <ExternalLink type="Github" :link="githubUrl"/>
-                    <ExternalLink type="Itch.io" :link="itchUrl"/>
+                    <ExternalLink type="Github" :link="githubUrl" />
+                    <ExternalLink type="Itch.io" :link="itchUrl" />
                 </div>
             </div>
         </div>
@@ -14,15 +14,15 @@
         <div class="flex flex-col gap-8 pb-10">
             <!-- Game Preview Image -->
             <div class="flex flex-col md:flex-row bg-white border border-gray-200 rounded-2xl overflow-hidden">
-                <img src="/images/DontPressS/DontPressS.png" alt="Don't Press S"
-                    class="w-full md:w-1/3 lg:w-1/4 h-auto object-cover" />
+                <NuxtImg provider="cloudinary" :src="current?.image" alt="Don't Press S"
+                    class="w-full md:w-1/3 lg:w-1/4 h-auto object-cover" preload/>
                 <div class="p-6 flex flex-col justify-center">
                     <p class="text-gray-700 leading-relaxed">{{ current?.description }}</p>
                 </div>
             </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <img v-for="i in screenshots" :key="i" :src="`/images/DontPressS/${i}`"
+            <LoadingProjectSkeleton v-if="pending" />
+            <div v-else class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <NuxtImg provider="cloudinary" v-for="i in images" :key="i" :src="i"
                     class="w-full h-32 sm:h-40 md:h-48 object-cover rounded-lg border border-gray-200 shadow-sm transition-transform duration-200 hover:scale-[1.02]" />
             </div>
         </div>
@@ -33,8 +33,7 @@
 import { GameProjects } from '~/data/projects'
 const route = useRoute();
 const current = GameProjects.find(project => project.to === route.path);
-
-const screenshots = ['DPS01.png', 'DPS02.png', 'DPS03.png', 'DPS04.png', 'DPS05.png', 'DPS06.png', 'DPS07.png', 'DPS08.jfif', 'DPS09.jfif', 'DPS10.jfif', 'DPS11.jfif']
+const { images, pending } = useProjectImages('game-projects/DontPressS')
 
 const githubUrl = 'https://github.com/OokaitodoO/dont-press-s'
 const itchUrl = 'https://mixerza101.itch.io/dont-press-s'

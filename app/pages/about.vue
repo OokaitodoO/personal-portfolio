@@ -9,8 +9,7 @@
                 <h1 class="text-2xl font-bold text-gray-800 mb-6">EDUCATION</h1>
                 <div class="flex flex-col gap-6">
                     <div class="flex gap-4 items-center">
-                        <img src="/images/CMULogo.png" alt="Chiang Mai University Logo"
-                            class="w-24 h-auto object-contain flex-shrink-0">
+                        <NuxtImg provider="cloudinary" alt="Chiang Mai University Logo" src="CMULogo_fhxucz.png" class="w-24 h-auto object-contain shrink-0" preload/>
                         <div class="flex flex-col gap-1">
                             <h2 class="text-xl font-semibold text-gray-700">Bachelor of Science (Digital games)</h2>
                             <p class="text-gray-600 font-light">Chiang Mai University, Thailand</p>
@@ -26,7 +25,7 @@
                 <h1 class="text-2xl font-bold text-gray-800 mb-6">EXPERIENCE</h1>
                 <div class="flex gap-6 flex-col">
                     <div class="flex gap-4 items-center">
-                        <img src="/images/VarisoftLogo.png" alt="Varisoft Logo" class="w-24 h-auto object-contain shrink">
+                        <NuxtImg provider="cloudinary" alt="Varisoft Logo" src="VarisoftLogo_lldvpn" class="w-24 h-auto object-contain shrink" preload/>
                         <div class="flex flex-col gap-1">
                             <h2 class="text-lg font-medium text-gray-700">Intern Unity Developer</h2>
                             <p class="text-gray-600 font-light">Varisoft • June 2025 - March 2026</p>

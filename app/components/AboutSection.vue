@@ -28,11 +28,11 @@
                     <p class=" font-light">Years experience</p>
                 </div>
                 <div class="flex flex-col">
-                    <h2 class=" text-6xl font-semibold">6</h2>
+                    <h2 class=" text-6xl font-semibold">{{ GameProjects.length }}</h2>
                     <p class=" font-light">Game projects</p>
                 </div>
                 <div class="flex flex-col">
-                    <h2 class=" text-6xl font-semibold">2</h2>
+                    <h2 class=" text-6xl font-semibold">{{ WebProjects.length }}</h2>
                     <p class=" font-light">Web projects</p>
                 </div>
             </div>
@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-
+import { GameProjects, WebProjects } from '~/data/projects';
 </script>
 
 <style scoped></style>

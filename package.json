@@ -10,7 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/image": "^2.0.0",
+    "@nuxtjs/cloudinary": "^4.0.0",
     "@tailwindcss/vite": "^4.3.0",
+    "@types/node": "^26.1.0",
+    "cloudinary": "^2.10.0",
     "nuxt": "^4.4.8",
     "tailwindcss": "^4.3.0",
     "vue": "^3.5.35",

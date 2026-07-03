@@ -40,6 +40,7 @@ const techStyles: Record<string, string> = {
     'HTML': 'bg-orange-50 text-orange-400',
     'CSS': 'bg-indigo-50 text-indigo-400',
     'Laravel': 'bg-red-50 text-red-400',
+    'React': 'bg-purple-50 text-blue-400',
 
     // Platforms
     'WebGL': 'bg-teal-50 text-teal-400',
@@ -57,6 +58,7 @@ const techStyles: Record<string, string> = {
     'Tailwind': 'bg-sky-50 text-sky-400',
     'Git': 'bg-orange-50 text-orange-400',
     'Docker': 'bg-cyan-50 text-cyan-400',
+    'Firebase': 'bg-orange-50 text-orange-400'
 }
 
 const getTechClasses = (tech: string) => {

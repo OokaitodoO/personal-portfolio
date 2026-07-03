@@ -13,7 +13,7 @@
                 <ProjectCard v-for="project in GameProjects" :key="project.title" :title="project.title"
                     :description="project.description" :image="project.image" :tech-stack="project.techStack"
                     :to="project.to" />
-            </div>
+            </div>            
         </div>
 
         <div class="flex flex-col gap-6">
