@@ -13,7 +13,7 @@
         <div class="flex flex-col gap-8 pb-10">
             <!-- Game Preview Image -->
             <div class="flex flex-col md:flex-row bg-white border border-gray-200 rounded-2xl overflow-hidden">
-                <img src="/images/Poker/Poker.png" alt="Poker" class="w-full md:w-1/3 lg:w-1/4 h-auto object-cover" />
+                <NuxtImg provider="cloudinary" :src="current?.image" alt="Poker" class="w-full md:w-1/3 lg:w-1/4 h-auto object-cover" />
                 <div class="p-6 flex flex-col justify-center">
                     <p class="text-gray-700 leading-relaxed">{{ current?.description }}</p>
                 </div>
