@@ -42,12 +42,10 @@
                                 <!-- Project 1 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
-                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Don't Press S</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">Live action interactive
-                                        game. Made on Global Game Jam 2024 at CAMT, Chiang Mai University. Has 48 hours
-                                        limited time. 1st runner-up rewarded.</p>
-                                    <TechStack :technologies="['Unity', 'C#', 'Windows']" wrapper-class="mb-3" />
-                                    <nuxt-link to="/works/dont-press-s"
+                                    <h3 class="text-lg font-medium text-gray-800 mb-2">{{ projectCard1.title }}</h3>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">{{ projectCard1.description }}</p>
+                                    <TechStack :technologies="projectCard1.techStack" wrapper-class="mb-3" />
+                                    <nuxt-link :to="projectCard1.to"
                                         class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project
                                         →</nuxt-link>
                                 </div>
@@ -55,23 +53,21 @@
                                 <!-- Project 2 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
-                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Web Portfolio</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">Personal website
-                                        portfolio for show my works with game and web development experience.</p>
-                                    <TechStack :technologies="['Nuxt', 'Vue.js', 'Tailwind', 'HTML']"
-                                        wrapper-class="mb-3" />
+                                    <h3 class="text-lg font-medium text-gray-800 mb-2">{{ projectCard2.title }}</h3>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">{{ projectCard2.description }}</p>
+                                    <TechStack :technologies="projectCard2.techStack" wrapper-class="mb-3" />
+                                    <nuxt-link :to="projectCard2.to"
+                                        class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project
+                                        →</nuxt-link>
                                 </div>
 
                                 <!-- Project 3 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
-                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Unusual Poker</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">A online poker taxas holdem android
-                                        game with magic skill for cheating. Made with Unity and MagicOnion RPC C#
-                                        framework.</p>
-                                    <TechStack :technologies="['Unity', 'C#', 'MagicOnion', 'Android']"
-                                        wrapper-class="mb-3" />
-                                    <nuxt-link to="/works/poker"
+                                    <h3 class="text-lg font-medium text-gray-800 mb-2">{{ projectCard3.title }}</h3>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">{{ projectCard3.description }}</p>
+                                    <TechStack :technologies="projectCard3.techStack" wrapper-class="mb-3" />
+                                    <nuxt-link :to="projectCard3.to"
                                         class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project
                                         →</nuxt-link>
                                 </div>
@@ -84,11 +80,10 @@
                                 <!-- Project 4 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
-                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Redveil</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">A 3D mysterious adventure
-                                        game with a distinctive red aesthetic and weapon mechanic.</p>
-                                    <TechStack :technologies="['Unity', 'C#', 'Windows']" wrapper-class="mb-3" />
-                                    <nuxt-link to="/works/redveil"
+                                    <h3 class="text-lg font-medium text-gray-800 mb-2">{{ projectCard4.title }}</h3>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">{{ projectCard4.description }}</p>
+                                    <TechStack :technologies="projectCard4.techStack" wrapper-class="mb-3" />
+                                    <nuxt-link :to="projectCard4.to"
                                         class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project
                                         →</nuxt-link>
                                 </div>
@@ -96,13 +91,10 @@
                                 <!-- Project 5 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
-                                    <h3 class="text-lg font-medium text-gray-800 mb-2">CAMT Portal</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">Web portal for CAMT,
-                                        Chiang Mai University. Manage staff task with web portal style. Fast
-                                        accessibility, easy use.</p>
-                                    <TechStack :technologies="['Laravel', 'MySQL', 'Vite', 'Docker', 'PHP']"
-                                        wrapper-class="mb-3" />
-                                    <nuxt-link to="/works/camt-portal"
+                                    <h3 class="text-lg font-medium text-gray-800 mb-2">{{ projectCard5.title }}</h3>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">{{ projectCard5.description }}</p>
+                                    <TechStack :technologies="projectCard5.techStack" wrapper-class="mb-3" />
+                                    <nuxt-link :to="projectCard5.to"
                                         class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project
                                         →</nuxt-link>
                                 </div>
@@ -110,13 +102,10 @@
                                 <!-- Project 6 -->
                                 <div
                                     class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col hover:border-gray-200 transition-all">
-                                    <h3 class="text-lg font-medium text-gray-800 mb-2">Blackest Night</h3>
-                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">A dark-themed indie game
-                                        project, endless game loop. You need to survive as long as you can in a mystery
-                                        forest.
-                                    </p>
-                                    <TechStack :technologies="['Unity', 'C#', 'Android']" wrapper-class="mb-3" />
-                                    <nuxt-link to="/works/blackest-night"
+                                    <h3 class="text-lg font-medium text-gray-800 mb-2">{{ projectCard6.title }}</h3>
+                                    <p class="text-gray-500 mb-4 text-sm leading-relaxed grow">{{ projectCard6.description }}</p>
+                                    <TechStack :technologies="projectCard6.techStack" wrapper-class="mb-3" />
+                                    <nuxt-link :to="projectCard6.to"
                                         class="text-gray-600 text-sm hover:text-gray-800 transition-colors">View Project
                                         →</nuxt-link>
                                 </div>
@@ -161,6 +150,15 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import TechStack from '@/components/TechStack.vue'
+import { GameProjects, WebProjects } from '~/data/projects';
+
+const projectCard1 = GameProjects.find(p => p.title === "Don't Press S");
+const projectCard2 = GameProjects.find(p => p.title === "Education Game");
+const projectCard3 = GameProjects.find(p => p.title === 'Unusual Poker');
+const projectCard4 = GameProjects.find(p => p.title === 'Redveil');
+const projectCard5 = WebProjects.find(p => p.title === 'CAMT Portal');
+const projectCard6 = GameProjects.find(p => p.title === 'Blackest Night');
+
 
 useHead({
     title: "Portfolio - Home",
