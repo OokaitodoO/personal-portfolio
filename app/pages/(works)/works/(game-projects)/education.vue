@@ -26,7 +26,7 @@
             <LoadingProjectSkeleton v-if="pending" />
             <div v-else class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <img v-for="i in images" :key="i" :src="i"
-                    class="w-full h-32 sm:h-40 md:h-48 object-cover rounded-lg border border-gray-200 shadow-sm transition-transform duration-200 hover:scale-[1.02]" />
+                    class="w-full aspect-video object-cover rounded-lg border border-gray-200 shadow-sm transition-transform duration-200 hover:scale-[1.02]" />
             </div>
         </div>
     </section>
