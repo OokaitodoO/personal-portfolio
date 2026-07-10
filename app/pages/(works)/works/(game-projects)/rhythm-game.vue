@@ -40,6 +40,10 @@ const { images, pending } = useProjectImages('game-projects/RhythmGame');
 const githubUrl = "https://github.com/OokaitodoO/ActionDanceGame";
 const DemoUrl = "https://drive.google.com/file/d/1BbESnTiBeJN0baEDhFLk7ZiiiQOMVjSo/view?usp=sharing";
 const ItchUrl = "";
+
+useHead({
+    title: "Rhythm - Game Project"
+})
 </script>
 
 <style scoped>

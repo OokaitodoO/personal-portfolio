@@ -39,6 +39,10 @@ const { images, pending } = useProjectImages('game-projects/FutsalHyperCasual');
 const githubUrl = "https://github.com/OokaitodoO/FutsalHyperCasual";
 const DemoUrl = "https://drive.google.com/file/d/1EER6Gclc-dycLJV3CPNsdGyeqHPvyBX4/view?usp=sharing";
 
+useHead({
+    title: "Futsal Hyper Casual - Game Project"
+})
+
 </script>
 
 <style scoped>
